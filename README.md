@@ -7,6 +7,7 @@ In this tutorial, we’re gonna build a React JWT Authentication example with Lo
 - Creating React Components with Form Validation
 - React Components for accessing protected Resources (Authorization)
 - Dynamic Navigation Bar in React App
+- Update
 
 ## User Registration and User Login Flow
 For JWT Authentication, we’re gonna call 2 endpoints:
