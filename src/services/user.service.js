@@ -8,7 +8,8 @@ class UserService {
     return axios.get(API_URL + 'all', 
     {headers: { 'Content-Type': 'application/x-www-form-urlencoded', 
     'Access-Control-Allow-Origin':'*', 
-    'Access-Control-Allow-Headers':'Origin, X-Requested-With, Content-Type, Accept' }});
+    'Access-Control-Allow-Headers':'Origin, X-Requested-With, Content-Type, Accept',
+  'Access-Control-Allow-Credentials':'true' }});
   }
 
   getUserBoard() {
