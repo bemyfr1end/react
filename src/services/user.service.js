@@ -5,7 +5,8 @@ const API_URL = 'https://b-m-fb.herokuapp.com/api/test/';
 
 class UserService {
   getPublicContent() {
-    return axios.get(API_URL + 'all');
+    return axios.get(API_URL + 'all', {headers: { 'Content-Type': 'application/x-www-form-urlencoded', 
+    'Access-Control-Allow-Origin':'*' }});
   }
 
   getUserBoard() {
