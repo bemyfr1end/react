@@ -1,4 +1,5 @@
 import axios from "axios";
+import cors from 'cors';
 
 const API_URL = "https://b-m-fb.herokuapp.com/api/test/";
 
