@@ -186,10 +186,25 @@
 	<!-- Load scatter-gl.js -->
 	<script src="https://cdn.jsdelivr.net/npm/scatter-gl@0.0.13/lib/scatter-gl.min.js"></script>
 
+	<!-- Import @tensorflow/tfjs or @tensorflow/tfjs-core -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgpu/dist/tf-backend-webgpu.js"></script>
 <script>
 // Set the backend to WebGPU and wait for the module to be ready
 tf.setBackend('webgpu').then(() => main());
+
+const init = async () => {
+	await tf.ready();
+
+// Now we can create tensors and run ops.
+tf.matMul(a, b).print(); 
+			await pose.send({ image: videoElement });
+	
+};
+
+init();
+
 </script>
 
 	<!-- Load tracker.js and app.js-->
